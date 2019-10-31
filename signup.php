@@ -8,6 +8,11 @@
 <body>
 <p id="error">* Required fields</p>
 
+ <?php 
+if(isset($_GET['error']))
+echo "<p id='error'>".$_GET['error']."</p>";
+?>
+
 <div id="main">
 	<table border="0" cellpadding="6" align="center">
 	<form action="signup_process.php" enctype="multipart/form-data" method="post">
@@ -27,6 +32,9 @@
 		<tr><td></td><td>Already a member ?<a href="login.php"> Sign in here </a> </tr>
 	</form>
 	</table>
+	
+	
+
 </body>
 <footer id="foot01"></footer>
 </div>

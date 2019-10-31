@@ -10,6 +10,12 @@
 <br><br><br><br><br><br>
 <?php
 
+require('PHPMailer-master/vendor/autoload.php');
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
+
 session_start();
 // initializing variables
 
@@ -76,7 +82,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
    }
      if(empty($_POST["password"]))
    {
-	header('Location:./signup.php?error=Password is required');
+	header('Location:./signup.php?error=wrong password');  
     exit();
    }
    else
@@ -96,8 +102,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
             exit();        
 	}
 
-
-
+//PHP mailer
 
 
 //database connection	
@@ -117,14 +122,15 @@ $query = "SELECT * FROM users WHERE email='$mail'";
 $result = $conn->query($query);
 if ($result->num_rows>0) {
             //Email is taken
-         header('location:signup.php?error=Email is already used. Please try another one or sign in using the same email.');
+         header('Location:./signup.php?error=Email is already used. Please try another one or <a href="login.php">Login</a> here if you already have an account.');
          exit();
+		 
         }
 $query = "SELECT * FROM users WHERE mobile='$mobile'";
 $result = $conn->query($query);
 if ($result->num_rows>0) {
             //Mobile  is taken
-         header('location:signup.php?error=Mobile number is already used. Please check again!');
+         header('Location:./signup.php?error=Mobile number is already used. Please check again!');
          exit();
         }
 		
@@ -132,7 +138,7 @@ $query = "SELECT * FROM users WHERE uname='$uId'";
 $result = $conn->query($query);
 if ($result->num_rows>0) {
             //Username is taken
-         header('location:signup.php?error=Username is already in use. Please try again using a different username!');
+         header('Location:./signup.php?error=Username is already in use. Please try again using a different username!');
          exit();
         }
   
@@ -153,10 +159,49 @@ $sql="INSERT INTO users (name,email,mobile,uname,password,reset_token) VALUES('$
  
 
 if($conn->query($sql)==TRUE)
- {
+{
 	
-	 echo"You have successfully registered<br>";
-	 echo'Now to complete the process,<a href="login.php">click here</a> to login';
+$message = "<p>Please click the link below to activate your account</p>";
+$message .= "<a href='http://localhost/Poodle.com/login.php?email=$mail&reset_token=$reset_token'>";
+$message .= "Activate Account";
+$message .= "</a>";
+
+
+function send_mail($to, $subject, $message)
+{
+    $mail = new PHPMailer(true);
+
+    try {
+        //Server settings
+	$mail->SMTPDebug = 0;                                       // Enable verbose debug output
+	$mail->isSMTP();                                            // Set mailer to use SMTP
+	$mail->Host       = 'smtp.gmail.com;';  // Specify main and backup SMTP servers
+	$mail->SMTPAuth   = true;                                   // Enable SMTP authentication
+	$mail->Username   = 'noreply.poodle@gmail.com';                     // SMTP username
+	$mail->Password   = 'doodle4poodle*';                               // SMTP password
+	$mail->SMTPSecure = 'tls';                                  // Enable TLS encryption, `ssl` also accepted
+	$mail->Port       = 587;                                    // TCP port to connect to
+
+	$mail->setFrom('noreply.poodle@gmail.com', 'Poodle.com');
+	//Recipients
+	$mail->addAddress($to);
+
+	// Content
+	$mail->isHTML(true);                                  // Set email format to HTML
+	$mail->Subject = $subject;
+	$mail->Body    = $message;
+
+	$mail->send();
+	echo 'Message has been sent. Please check your email to activate your account.';
+    } catch (Exception $e) {
+	echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    }
+}
+
+send_mail($mail, "Confirmation Email", $message);	
+
+	 //echo"You have successfully registered<br>";
+	 //echo'Now to complete the process,<a href="login.php">click here</a> to login';
  }
  else echo"Error:".$sql."<br>".$conn->error;
  

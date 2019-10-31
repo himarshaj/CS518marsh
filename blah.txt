@@ -1,0 +1,87 @@
+Future work:
+validate what will be inserted
+
+
+$output_n = sizeof($response['hits']['hits'],0);
+
+if($output_n==0)
+{
+	echo "No results found, Please try again";
+}
+	
+$time = ((int)($response['took'])/1000);
+$output = ($response['hits']['hits']);
+
+print_r($time);
+echo " seconds to display ";
+print_r($output_n);
+echo " matches";
+
+echo "<div class = 'snippet' style = 'margin-bottom: 10%;' >";
+ for ($i=0; $i<$output_n; $i++)
+	{
+		echo '<br><div id="'.$output[$i]['_id'].'" class="p" >
+		<a>'.$output[$i]['_source']['firstname'].' '.$output[$i]['_source']['lastname'].' </a>
+		<br>
+		<a>'.$output[$i]['_source']['address'].' </a>
+		<br>
+		<a>'.$output[$i]['_source']['gender'].' </a>
+		<br>
+		<a>'.$output[$i]['_source']['city'].' </a>
+		<br>
+		<a>'.$output[$i]['_source']['state'].' </a>
+		</div>';
+	} 
+echo "</div>";	 
+
+=============
+
+
+                  ['match' => ['firstname' => "{$searchterm1}"]],
+                  ['match' => ['lastname' => "{$searchterm1}"]],
+                  ['match' => ['gender' => "{$searchterm1}"]],
+                  ['match' => ['address' => "{$searchterm1}"]],
+                  ['match' => ['employer' => "{$searchterm1}"]],
+                  ['match' => ['email' => "{$searchterm1}"]],
+                  ['match' => ['city' => "{$searchterm1}"]],
+				 
+                  ['match' => ['state' => "{$searchterm1}"]]
+				  
+				  
+			================
+			
+
+$params = [
+    'index' => 'bank',
+    'size'   => 1000,    
+      'body' => [
+         'query' => [
+            'bool' => [
+               'must' => [
+			   {
+				   'multi-match'=> {
+					    'query' => "{$searchterm1}",
+						'fields' => ['firstname','lastname','address','employer','email']
+				   } 
+			   }
+                  
+               ]
+            ]
+         ],  
+      ]
+  ];
+
+=============
+
+
+	$params = ['body']['id'] = "{$id}";
+	$params = ['body']['firstname'] = "{$firstname}";
+	$params = ['body']['lastname'] = "{$lastname}";
+	$params = ['body']['gender'] = "{$gender}";
+	$params = ['body']['address'] = "{$address}";
+	$params = ['body']['employer'] = "{$employer}";
+	$params = ['body']['email'] = "{$email}";
+	$params = ['body']['city'] = "{$city}";
+	$params = ['state']['state'] = "{$city}";	
+
+

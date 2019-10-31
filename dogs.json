@@ -1,0 +1,2095 @@
+﻿[
+	{
+		"breed": "Afador",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "High",
+		"size": "Mini",
+		"lifespan": "15-16"
+	},
+	{
+		"breed": "Affenpinscher",
+		"temperament": "Responsive Dog",
+		"intelligence": "Medium",
+		"size": "Small",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Afghan Hound",
+		"temperament": "Active",
+		"intelligence": "Low",
+		"size": "Medium",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Airedale Terrier",
+		"temperament": "Independent",
+		"intelligence": "Medium",
+		"size": "Large",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Akita",
+		"temperament": "Timid/Shy",
+		"intelligence": "Low",
+		"size": "X-Large",
+		"lifespan": "15-16"
+	},
+	{
+		"breed": "Alaskan Klee Kai",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "Medium",
+		"size": "Giant",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Alaskan Malamute",
+		"temperament": "Responsive Dog",
+		"intelligence": "Low",
+		"size": "Giant",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "American Bulldog",
+		"temperament": "Active",
+		"intelligence": "Low",
+		"size": "Mini",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "American English Coonhound",
+		"temperament": "Independent",
+		"intelligence": "Medium",
+		"size": "Small",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "American Eskimo Dog",
+		"temperament": "Timid/Shy",
+		"intelligence": "Low",
+		"size": "Medium",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "American Foxhound",
+		"temperament": "Active",
+		"intelligence": "High",
+		"size": "Large",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "American Leopard Hound",
+		"temperament": "Independent",
+		"intelligence": "High",
+		"size": "X-Large",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "American Pit Bull Terrier",
+		"temperament": "Timid/Shy",
+		"intelligence": "High",
+		"size": "Giant",
+		"lifespan": "15-16"
+	},
+	{
+		"breed": "American Pugabull",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "Medium",
+		"size": "Giant",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "American Staffordshire Terrier",
+		"temperament": "Responsive Dog",
+		"intelligence": "Low",
+		"size": "Medium",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "American Water Spaniel",
+		"temperament": "Active",
+		"intelligence": "Medium",
+		"size": "Large",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Anatolian Shepherd Dog",
+		"temperament": "Timid/Shy",
+		"intelligence": "Low",
+		"size": "X-Large",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Appenzeller Sennenhunde",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "High",
+		"size": "Giant",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Auggie",
+		"temperament": "Responsive Dog",
+		"intelligence": "Medium",
+		"size": "Giant",
+		"lifespan": "15-16"
+	},
+	{
+		"breed": "Aussiedoodle",
+		"temperament": "Active",
+		"intelligence": "Low",
+		"size": "Mini",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Aussiepom",
+		"temperament": "Independent",
+		"intelligence": "Medium",
+		"size": "Small",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Australian Cattle Dog",
+		"temperament": "Timid/Shy",
+		"intelligence": "Low",
+		"size": "Medium",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Australian Kelpie",
+		"temperament": "Active",
+		"intelligence": "Medium",
+		"size": "Small",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Australian Shepherd",
+		"temperament": "Independent",
+		"intelligence": "Low",
+		"size": "Medium",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Australian Terrier",
+		"temperament": "Timid/Shy",
+		"intelligence": "Low",
+		"size": "Large",
+		"lifespan": "15-16"
+	},
+	{
+		"breed": "Azawakh",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "Medium",
+		"size": "Small",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Barbet",
+		"temperament": "Active",
+		"intelligence": "Low",
+		"size": "Medium",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Basenji",
+		"temperament": "Independent",
+		"intelligence": "High",
+		"size": "Large",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Bassador",
+		"temperament": "Timid/Shy",
+		"intelligence": "High",
+		"size": "X-Large",
+		"lifespan": "15-16"
+	},
+	{
+		"breed": "Basset Fauve de Bretagne",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "Medium",
+		"size": "Giant",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Basset Hound",
+		"temperament": "Responsive Dog",
+		"intelligence": "Low",
+		"size": "Giant",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Bavarian Mountain Scent Hound",
+		"temperament": "Active",
+		"intelligence": "Low",
+		"size": "Mini",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Beagle",
+		"temperament": "Independent",
+		"intelligence": "Medium",
+		"size": "Small",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Bearded Collie",
+		"temperament": "Timid/Shy",
+		"intelligence": "Low",
+		"size": "Medium",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Bedlington Terrier",
+		"temperament": "Active",
+		"intelligence": "High",
+		"size": "Large",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Belgian Malinois",
+		"temperament": "Independent",
+		"intelligence": "High",
+		"size": "Mini",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Belgian Sheepdog",
+		"temperament": "Timid/Shy",
+		"intelligence": "High",
+		"size": "Small",
+		"lifespan": "15-16"
+	},
+	{
+		"breed": "Belgian Tervuren",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "Medium",
+		"size": "Medium",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Berger Picard",
+		"temperament": "Responsive Dog",
+		"intelligence": "Low",
+		"size": "Large",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Bernedoodle",
+		"temperament": "Active",
+		"intelligence": "Medium",
+		"size": "X-Large",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Bernese Mountain Dog",
+		"temperament": "Timid/Shy",
+		"intelligence": "Low",
+		"size": "Giant",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Bichon Frise",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "Medium",
+		"size": "Giant",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Biewer Terrier",
+		"temperament": "Responsive Dog",
+		"intelligence": "Low",
+		"size": "Mini",
+		"lifespan": "15-16"
+	},
+	{
+		"breed": "Black and Tan Coonhound",
+		"temperament": "Active",
+		"intelligence": "Low",
+		"size": "Small",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Black Mouth Cur",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "Medium",
+		"size": "Medium",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Black Russian Terrier",
+		"temperament": "Responsive Dog",
+		"intelligence": "Low",
+		"size": "Large",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Bloodhound",
+		"temperament": "Active",
+		"intelligence": "High",
+		"size": "X-Large",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Blue Lacy",
+		"temperament": "Independent",
+		"intelligence": "High",
+		"size": "Giant",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Bluetick Coonhound",
+		"temperament": "Timid/Shy",
+		"intelligence": "High",
+		"size": "Giant",
+		"lifespan": "15-16"
+	},
+	{
+		"breed": "Bocker",
+		"temperament": "Active",
+		"intelligence": "Medium",
+		"size": "Medium",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Boerboel",
+		"temperament": "Independent",
+		"intelligence": "Low",
+		"size": "Large",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Boglen Terrier",
+		"temperament": "Timid/Shy",
+		"intelligence": "Medium",
+		"size": "X-Large",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Bolognese",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "Low",
+		"size": "Giant",
+		"lifespan": "15-16"
+	},
+	{
+		"breed": "Borador",
+		"temperament": "Active",
+		"intelligence": "High",
+		"size": "Giant",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Border Collie",
+		"temperament": "Independent",
+		"intelligence": "Medium",
+		"size": "Mini",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Border Terrier",
+		"temperament": "Timid/Shy",
+		"intelligence": "Low",
+		"size": "Small",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Bordoodle",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "Medium",
+		"size": "Medium",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Borzoi",
+		"temperament": "Responsive Dog",
+		"intelligence": "Low",
+		"size": "Small",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Boston Terrier",
+		"temperament": "Active",
+		"intelligence": "Medium",
+		"size": "Medium",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Bouvier des Flandres",
+		"temperament": "Independent",
+		"intelligence": "Low",
+		"size": "Large",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Boxer",
+		"temperament": "Timid/Shy",
+		"intelligence": "Low",
+		"size": "Small",
+		"lifespan": "15-16"
+	},
+	{
+		"breed": "Boxerdoodle",
+		"temperament": "Active",
+		"intelligence": "Medium",
+		"size": "Medium",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Boxmatian",
+		"temperament": "Independent",
+		"intelligence": "Low",
+		"size": "Large",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Boykin Spaniel",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "High",
+		"size": "X-Large",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Bracco Italiano",
+		"temperament": "Responsive Dog",
+		"intelligence": "High",
+		"size": "Giant",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Braque du Bourbonnais",
+		"temperament": "Active",
+		"intelligence": "Medium",
+		"size": "Giant",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Briard",
+		"temperament": "Independent",
+		"intelligence": "Low",
+		"size": "Mini",
+		"lifespan": "15-16"
+	},
+	{
+		"breed": "Brittany",
+		"temperament": "Timid/Shy",
+		"intelligence": "Low",
+		"size": "Small",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Broholmer",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "Medium",
+		"size": "Medium",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Brussels Griffon",
+		"temperament": "Responsive Dog",
+		"intelligence": "Low",
+		"size": "Large",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Bull Terrier",
+		"temperament": "Active",
+		"intelligence": "High",
+		"size": "Mini",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Bullboxer Pit",
+		"temperament": "Independent",
+		"intelligence": "High",
+		"size": "Small",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Bulldog",
+		"temperament": "Timid/Shy",
+		"intelligence": "High",
+		"size": "Medium",
+		"lifespan": "15-16"
+	},
+	{
+		"breed": "Bullmastiff",
+		"temperament": "Active",
+		"intelligence": "Medium",
+		"size": "Large",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Bullmatian",
+		"temperament": "Independent",
+		"intelligence": "Low",
+		"size": "X-Large",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Cairn Terrier",
+		"temperament": "Timid/Shy",
+		"intelligence": "Medium",
+		"size": "Giant",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Canaan Dog",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "Low",
+		"size": "Giant",
+		"lifespan": "15-16"
+	},
+	{
+		"breed": "Cane Corso",
+		"temperament": "Responsive Dog",
+		"intelligence": "Medium",
+		"size": "Mini",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Cardigan Welsh Corgi",
+		"temperament": "Active",
+		"intelligence": "Low",
+		"size": "Small",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Catahoula Bulldog",
+		"temperament": "Timid/Shy",
+		"intelligence": "Low",
+		"size": "Medium",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Catahoula Leopard Dog",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "Medium",
+		"size": "Large",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Caucasian Shepherd Dog",
+		"temperament": "Responsive Dog",
+		"intelligence": "Low",
+		"size": "X-Large",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Cav-a-Jack",
+		"temperament": "Active",
+		"intelligence": "High",
+		"size": "Giant",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Cavachon",
+		"temperament": "Independent",
+		"intelligence": "High",
+		"size": "Giant",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Cavador",
+		"temperament": "Timid/Shy",
+		"intelligence": "High",
+		"size": "Medium",
+		"lifespan": "15-16"
+	},
+	{
+		"breed": "Cavalier King Charles Spaniel",
+		"temperament": "Active",
+		"intelligence": "Medium",
+		"size": "Large",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Cavapoo",
+		"temperament": "Independent",
+		"intelligence": "Low",
+		"size": "X-Large",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Cesky Terrier",
+		"temperament": "Timid/Shy",
+		"intelligence": "Medium",
+		"size": "Giant",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Chabrador",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "Low",
+		"size": "Giant",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Cheagle",
+		"temperament": "Active",
+		"intelligence": "High",
+		"size": "Mini",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Chesapeake Bay Retriever",
+		"temperament": "Independent",
+		"intelligence": "Medium",
+		"size": "Small",
+		"lifespan": "15-16"
+	},
+	{
+		"breed": "Chi-Poo",
+		"temperament": "Timid/Shy",
+		"intelligence": "Low",
+		"size": "Medium",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Chihuahua",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "Medium",
+		"size": "Small",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Chilier",
+		"temperament": "Responsive Dog",
+		"intelligence": "Low",
+		"size": "Medium",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Chinese Crested",
+		"temperament": "Active",
+		"intelligence": "Medium",
+		"size": "Large",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Chinese Shar-Pei",
+		"temperament": "Independent",
+		"intelligence": "Low",
+		"size": "Small",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Chinook",
+		"temperament": "Timid/Shy",
+		"intelligence": "Low",
+		"size": "Medium",
+		"lifespan": "15-16"
+	},
+	{
+		"breed": "Chipin",
+		"temperament": "Active",
+		"intelligence": "Medium",
+		"size": "Large",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Chiweenie",
+		"temperament": "Independent",
+		"intelligence": "Low",
+		"size": "X-Large",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Chow Chow",
+		"temperament": "Timid/Shy",
+		"intelligence": "High",
+		"size": "Giant",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Chug",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "High",
+		"size": "Giant",
+		"lifespan": "15-16"
+	},
+	{
+		"breed": "Chusky",
+		"temperament": "Responsive Dog",
+		"intelligence": "Medium",
+		"size": "Mini",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Clumber Spaniel",
+		"temperament": "Active",
+		"intelligence": "Low",
+		"size": "Small",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Cockapoo",
+		"temperament": "Timid/Shy",
+		"intelligence": "Low",
+		"size": "Medium",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Cocker Spaniel",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "Medium",
+		"size": "Large",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Collie",
+		"temperament": "Responsive Dog",
+		"intelligence": "Low",
+		"size": "Mini",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Corgi Inu",
+		"temperament": "Active",
+		"intelligence": "High",
+		"size": "Small",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Corgidor",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "High",
+		"size": "Medium",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Coton de Tulear",
+		"temperament": "Responsive Dog",
+		"intelligence": "High",
+		"size": "Large",
+		"lifespan": "15-16"
+	},
+	{
+		"breed": "Curly-Coated Retriever",
+		"temperament": "Active",
+		"intelligence": "Medium",
+		"size": "X-Large",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Cairn Terrier",
+		"temperament": "Independent",
+		"intelligence": "Low",
+		"size": "Giant",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Canaan Dog",
+		"temperament": "Timid/Shy",
+		"intelligence": "Medium",
+		"size": "Giant",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Cane Corso",
+		"temperament": "Active",
+		"intelligence": "Low",
+		"size": "Mini",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Cardigan Welsh Corgi",
+		"temperament": "Independent",
+		"intelligence": "Medium",
+		"size": "Small",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Catahoula Bulldog",
+		"temperament": "Timid/Shy",
+		"intelligence": "Low",
+		"size": "Medium",
+		"lifespan": "15-16"
+	},
+	{
+		"breed": "Catahoula Leopard Dog",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "Low",
+		"size": "Large",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Caucasian Shepherd Dog",
+		"temperament": "Active",
+		"intelligence": "Medium",
+		"size": "X-Large",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Cav-a-Jack",
+		"temperament": "Independent",
+		"intelligence": "Low",
+		"size": "Giant",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Cavachon",
+		"temperament": "Timid/Shy",
+		"intelligence": "High",
+		"size": "Giant",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Cavador",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "High",
+		"size": "Medium",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Cavalier King Charles Spaniel",
+		"temperament": "Responsive Dog",
+		"intelligence": "High",
+		"size": "Large",
+		"lifespan": "15-16"
+	},
+	{
+		"breed": "Cavapoo",
+		"temperament": "Active",
+		"intelligence": "Medium",
+		"size": "X-Large",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Cesky Terrier",
+		"temperament": "Independent",
+		"intelligence": "Low",
+		"size": "Giant",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Chabrador",
+		"temperament": "Timid/Shy",
+		"intelligence": "Medium",
+		"size": "Giant",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Cheagle",
+		"temperament": "Active",
+		"intelligence": "Low",
+		"size": "Mini",
+		"lifespan": "15-16"
+	},
+	{
+		"breed": "Chesapeake Bay Retriever",
+		"temperament": "Independent",
+		"intelligence": "High",
+		"size": "Small",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Chi-Poo",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "Medium",
+		"size": "Medium",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Chihuahua",
+		"temperament": "Responsive Dog",
+		"intelligence": "Low",
+		"size": "Small",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Chilier",
+		"temperament": "Active",
+		"intelligence": "Medium",
+		"size": "Medium",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Chinese Crested",
+		"temperament": "Independent",
+		"intelligence": "Low",
+		"size": "Large",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Chinese Shar-Pei",
+		"temperament": "Timid/Shy",
+		"intelligence": "Medium",
+		"size": "Small",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Chinook",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "Low",
+		"size": "Medium",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Chipin",
+		"temperament": "Responsive Dog",
+		"intelligence": "Low",
+		"size": "Large",
+		"lifespan": "15-16"
+	},
+	{
+		"breed": "Chiweenie",
+		"temperament": "Active",
+		"intelligence": "Medium",
+		"size": "X-Large",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Chow Chow",
+		"temperament": "Independent",
+		"intelligence": "Low",
+		"size": "Giant",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Chug",
+		"temperament": "Timid/Shy",
+		"intelligence": "High",
+		"size": "Giant",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Chusky",
+		"temperament": "Active",
+		"intelligence": "High",
+		"size": "Mini",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Clumber Spaniel",
+		"temperament": "Independent",
+		"intelligence": "Medium",
+		"size": "Small",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Cockapoo",
+		"temperament": "Timid/Shy",
+		"intelligence": "Low",
+		"size": "Medium",
+		"lifespan": "15-16"
+	},
+	{
+		"breed": "Cocker Spaniel",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "Low",
+		"size": "Large",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Collie",
+		"temperament": "Responsive Dog",
+		"intelligence": "Medium",
+		"size": "Mini",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Corgi Inu",
+		"temperament": "Active",
+		"intelligence": "Low",
+		"size": "Small",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Corgidor",
+		"temperament": "Timid/Shy",
+		"intelligence": "High",
+		"size": "Medium",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Coton de Tulear",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "High",
+		"size": "Large",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Curly-Coated Retriever",
+		"temperament": "Responsive Dog",
+		"intelligence": "High",
+		"size": "X-Large",
+		"lifespan": "15-16"
+	},
+	{
+		"breed": "English Cocker Spaniel",
+		"temperament": "Active",
+		"intelligence": "Medium",
+		"size": "Giant",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "English Foxhound",
+		"temperament": "Independent",
+		"intelligence": "Low",
+		"size": "Giant",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "English Setter",
+		"temperament": "Timid/Shy",
+		"intelligence": "Medium",
+		"size": "Mini",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "English Springer Spaniel",
+		"temperament": "Active",
+		"intelligence": "Low",
+		"size": "Small",
+		"lifespan": "15-16"
+	},
+	{
+		"breed": "English Toy Spaniel",
+		"temperament": "Independent",
+		"intelligence": "Medium",
+		"size": "Medium",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Entlebucher Mountain Dog",
+		"temperament": "Timid/Shy",
+		"intelligence": "Low",
+		"size": "Large",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Eurasier",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "Low",
+		"size": "X-Large",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "German Pinscher",
+		"temperament": "Active",
+		"intelligence": "Medium",
+		"size": "Giant",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "German Shepherd Dog",
+		"temperament": "Independent",
+		"intelligence": "Low",
+		"size": "Giant",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "German Sheprador",
+		"temperament": "Timid/Shy",
+		"intelligence": "High",
+		"size": "Medium",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "German Shorthaired Pointer",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "High",
+		"size": "Large",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "German Spitz",
+		"temperament": "Responsive Dog",
+		"intelligence": "High",
+		"size": "X-Large",
+		"lifespan": "15-16"
+	},
+	{
+		"breed": "German Wirehaired Pointer",
+		"temperament": "Active",
+		"intelligence": "Medium",
+		"size": "Giant",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Giant Schnauzer",
+		"temperament": "Independent",
+		"intelligence": "Low",
+		"size": "Giant",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Glen of Imaal Terrier",
+		"temperament": "Timid/Shy",
+		"intelligence": "Medium",
+		"size": "Mini",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Goberian",
+		"temperament": "Active",
+		"intelligence": "Low",
+		"size": "Small",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Goldador",
+		"temperament": "Independent",
+		"intelligence": "High",
+		"size": "Medium",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Golden Cocker Retriever",
+		"temperament": "Timid/Shy",
+		"intelligence": "Medium",
+		"size": "Small",
+		"lifespan": "15-16"
+	},
+	{
+		"breed": "Golden Retriever",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "Low",
+		"size": "Medium",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Goldendoodle",
+		"temperament": "Responsive Dog",
+		"intelligence": "Medium",
+		"size": "Large",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Gollie",
+		"temperament": "Active",
+		"intelligence": "Low",
+		"size": "Small",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Gordon Setter",
+		"temperament": "Timid/Shy",
+		"intelligence": "Medium",
+		"size": "Medium",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Great Dane",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "Low",
+		"size": "Large",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Great Pyrenees",
+		"temperament": "Responsive Dog",
+		"intelligence": "Low",
+		"size": "X-Large",
+		"lifespan": "15-16"
+	},
+	{
+		"breed": "Greater Swiss Mountain Dog",
+		"temperament": "Active",
+		"intelligence": "Medium",
+		"size": "Giant",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Greyhound",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "Low",
+		"size": "Giant",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Harrier",
+		"temperament": "Responsive Dog",
+		"intelligence": "High",
+		"size": "Mini",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Havanese",
+		"temperament": "Active",
+		"intelligence": "High",
+		"size": "Small",
+		"lifespan": "15-16"
+	},
+	{
+		"breed": "Hokkaido",
+		"temperament": "Independent",
+		"intelligence": "Medium",
+		"size": "Medium",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Horgi",
+		"temperament": "Timid/Shy",
+		"intelligence": "Low",
+		"size": "Large",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Ibizan Hound",
+		"temperament": "Active",
+		"intelligence": "Low",
+		"size": "Mini",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Icelandic Sheepdog",
+		"temperament": "Independent",
+		"intelligence": "Medium",
+		"size": "Small",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Irish Red and White Setter",
+		"temperament": "Timid/Shy",
+		"intelligence": "Low",
+		"size": "Medium",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Irish Setter",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "High",
+		"size": "Large",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Irish Terrier",
+		"temperament": "Active",
+		"intelligence": "High",
+		"size": "X-Large",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Irish Water Spaniel",
+		"temperament": "Independent",
+		"intelligence": "High",
+		"size": "Giant",
+		"lifespan": "15-16"
+	},
+	{
+		"breed": "Irish Wolfhound",
+		"temperament": "Timid/Shy",
+		"intelligence": "Medium",
+		"size": "Giant",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Italian Greyhound",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "Low",
+		"size": "Mini",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Jack Chi",
+		"temperament": "Responsive Dog",
+		"intelligence": "Medium",
+		"size": "Small",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Jack Russell Terrier",
+		"temperament": "Active",
+		"intelligence": "Low",
+		"size": "Medium",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Japanese Chin",
+		"temperament": "Independent",
+		"intelligence": "Medium",
+		"size": "Large",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Japanese Spitz",
+		"temperament": "Timid/Shy",
+		"intelligence": "Low",
+		"size": "X-Large",
+		"lifespan": "15-16"
+	},
+	{
+		"breed": "Korean Jindo Dog",
+		"temperament": "Active",
+		"intelligence": "Low",
+		"size": "Giant",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Karelian Bear Dog",
+		"temperament": "Independent",
+		"intelligence": "Medium",
+		"size": "Giant",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Keeshond",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "Low",
+		"size": "Medium",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Kerry Blue Terrier",
+		"temperament": "Responsive Dog",
+		"intelligence": "High",
+		"size": "Large",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Komondor",
+		"temperament": "Active",
+		"intelligence": "High",
+		"size": "X-Large",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Kooikerhondje",
+		"temperament": "Independent",
+		"intelligence": "High",
+		"size": "Giant",
+		"lifespan": "15-16"
+	},
+	{
+		"breed": "Kuvasz",
+		"temperament": "Timid/Shy",
+		"intelligence": "Medium",
+		"size": "Giant",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Kyi-Leo",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "Low",
+		"size": "Mini",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Lab Pointer",
+		"temperament": "Responsive Dog",
+		"intelligence": "Medium",
+		"size": "Small",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Labernese",
+		"temperament": "Active",
+		"intelligence": "Low",
+		"size": "Medium",
+		"lifespan": "15-16"
+	},
+	{
+		"breed": "Labmaraner",
+		"temperament": "Independent",
+		"intelligence": "High",
+		"size": "Small",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Labrabull",
+		"temperament": "Timid/Shy",
+		"intelligence": "Medium",
+		"size": "Medium",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Labradane",
+		"temperament": "Active",
+		"intelligence": "Low",
+		"size": "Large",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Labradoodle",
+		"temperament": "Independent",
+		"intelligence": "Medium",
+		"size": "Small",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Labrador Retriever",
+		"temperament": "Timid/Shy",
+		"intelligence": "Low",
+		"size": "Medium",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Labrastaff",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "Medium",
+		"size": "Large",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Labsky",
+		"temperament": "Responsive Dog",
+		"intelligence": "Low",
+		"size": "X-Large",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Lagotto Romagnolo",
+		"temperament": "Active",
+		"intelligence": "Low",
+		"size": "Giant",
+		"lifespan": "15-16"
+	},
+	{
+		"breed": "Lakeland Terrier",
+		"temperament": "Timid/Shy",
+		"intelligence": "Medium",
+		"size": "Giant",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Lancashire Heeler",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "High",
+		"size": "Mini",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Leonberger",
+		"temperament": "Responsive Dog",
+		"intelligence": "Medium",
+		"size": "Small",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Lhasa Apso",
+		"temperament": "Active",
+		"intelligence": "Low",
+		"size": "Medium",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Lowchen",
+		"temperament": "Independent",
+		"intelligence": "Medium",
+		"size": "Large",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Maltese",
+		"temperament": "Timid/Shy",
+		"intelligence": "Low",
+		"size": "Mini",
+		"lifespan": "15-16"
+	},
+	{
+		"breed": "Maltese Shih Tzu",
+		"temperament": "Active",
+		"intelligence": "Medium",
+		"size": "Small",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Maltipoo",
+		"temperament": "Independent",
+		"intelligence": "Low",
+		"size": "Medium",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Manchester Terrier",
+		"temperament": "Timid/Shy",
+		"intelligence": "Low",
+		"size": "Large",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Mastador",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "Medium",
+		"size": "X-Large",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Mastiff",
+		"temperament": "Active",
+		"intelligence": "Low",
+		"size": "Giant",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Miniature Pinscher",
+		"temperament": "Independent",
+		"intelligence": "High",
+		"size": "Giant",
+		"lifespan": "15-16"
+	},
+	{
+		"breed": "Miniature Schnauzer",
+		"temperament": "Timid/Shy",
+		"intelligence": "High",
+		"size": "Mini",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Morkie",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "High",
+		"size": "Small",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Mudi",
+		"temperament": "Responsive Dog",
+		"intelligence": "Medium",
+		"size": "Medium",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Mutt",
+		"temperament": "Active",
+		"intelligence": "Low",
+		"size": "Large",
+		"lifespan": "15-16"
+	},
+	{
+		"breed": "Old English Sheepdog",
+		"temperament": "Independent",
+		"intelligence": "Medium",
+		"size": "X-Large",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Otterhound",
+		"temperament": "Timid/Shy",
+		"intelligence": "Low",
+		"size": "Giant",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Papillon",
+		"temperament": "Active",
+		"intelligence": "High",
+		"size": "Giant",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Peekapoo",
+		"temperament": "Independent",
+		"intelligence": "Medium",
+		"size": "Medium",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Pekingese",
+		"temperament": "Timid/Shy",
+		"intelligence": "Low",
+		"size": "Large",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Pembroke Welsh Corgi",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "Medium",
+		"size": "X-Large",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Petit Basset Griffon Vendeen",
+		"temperament": "Responsive Dog",
+		"intelligence": "Low",
+		"size": "Giant",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Pharaoh Hound",
+		"temperament": "Active",
+		"intelligence": "Medium",
+		"size": "Giant",
+		"lifespan": "15-16"
+	},
+	{
+		"breed": "Pitsky",
+		"temperament": "Timid/Shy",
+		"intelligence": "Low",
+		"size": "Mini",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Plott",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "Low",
+		"size": "Small",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Pocket Beagle",
+		"temperament": "Responsive Dog",
+		"intelligence": "Medium",
+		"size": "Medium",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Pointer",
+		"temperament": "Active",
+		"intelligence": "Low",
+		"size": "Small",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Polish Lowland Sheepdog",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "High",
+		"size": "Medium",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Pomapoo",
+		"temperament": "Responsive Dog",
+		"intelligence": "High",
+		"size": "Large",
+		"lifespan": "15-16"
+	},
+	{
+		"breed": "Pomchi",
+		"temperament": "Active",
+		"intelligence": "Medium",
+		"size": "Small",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Pomeagle",
+		"temperament": "Independent",
+		"intelligence": "Low",
+		"size": "Medium",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Pomeranian",
+		"temperament": "Timid/Shy",
+		"intelligence": "Low",
+		"size": "Large",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Pomsky",
+		"temperament": "Active",
+		"intelligence": "Medium",
+		"size": "X-Large",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Poochon",
+		"temperament": "Independent",
+		"intelligence": "Low",
+		"size": "Giant",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Poodle",
+		"temperament": "Timid/Shy",
+		"intelligence": "High",
+		"size": "Giant",
+		"lifespan": "15-16"
+	},
+	{
+		"breed": "Portuguese Podengo Pequeno",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "High",
+		"size": "Mini",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Portuguese Water Dog",
+		"temperament": "Active",
+		"intelligence": "High",
+		"size": "Small",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Pug",
+		"temperament": "Independent",
+		"intelligence": "Medium",
+		"size": "Medium",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Puggle",
+		"temperament": "Timid/Shy",
+		"intelligence": "Low",
+		"size": "Large",
+		"lifespan": "15-16"
+	},
+	{
+		"breed": "Puli",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "Medium",
+		"size": "Mini",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Pyrenean Shepherd",
+		"temperament": "Responsive Dog",
+		"intelligence": "Low",
+		"size": "Small",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Rat Terrier",
+		"temperament": "Active",
+		"intelligence": "Medium",
+		"size": "Medium",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Redbone Coonhound",
+		"temperament": "Independent",
+		"intelligence": "Low",
+		"size": "Large",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Rhodesian Ridgeback",
+		"temperament": "Timid/Shy",
+		"intelligence": "Low",
+		"size": "X-Large",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Rottweiler",
+		"temperament": "Active",
+		"intelligence": "Medium",
+		"size": "Giant",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Saint Berdoodle",
+		"temperament": "Independent",
+		"intelligence": "Low",
+		"size": "Giant",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Saint Bernard",
+		"temperament": "Independent",
+		"intelligence": "High",
+		"size": "Mini",
+		"lifespan": "15-16"
+	},
+	{
+		"breed": "Saluki",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "High",
+		"size": "Small",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Samoyed",
+		"temperament": "Responsive Dog",
+		"intelligence": "High",
+		"size": "Medium",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Schipperke",
+		"temperament": "Active",
+		"intelligence": "Medium",
+		"size": "Large",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Schnoodle",
+		"temperament": "Independent",
+		"intelligence": "Low",
+		"size": "X-Large",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Scottish Deerhound",
+		"temperament": "Timid/Shy",
+		"intelligence": "Medium",
+		"size": "Giant",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Scottish Terrier",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "Low",
+		"size": "Giant",
+		"lifespan": "15-16"
+	},
+	{
+		"breed": "Sealyham Terrier",
+		"temperament": "Responsive Dog",
+		"intelligence": "High",
+		"size": "Medium",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Shepsky",
+		"temperament": "Active",
+		"intelligence": "Medium",
+		"size": "Large",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Shetland Sheepdog",
+		"temperament": "Independent",
+		"intelligence": "Low",
+		"size": "X-Large",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Shiba Inu",
+		"temperament": "Timid/Shy",
+		"intelligence": "Medium",
+		"size": "Giant",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Shih-Poo",
+		"temperament": "Active",
+		"intelligence": "Low",
+		"size": "Giant",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Shih Tzu",
+		"temperament": "Independent",
+		"intelligence": "Medium",
+		"size": "Mini",
+		"lifespan": "15-16"
+	},
+	{
+		"breed": "Shiranian",
+		"temperament": "Timid/Shy",
+		"intelligence": "Low",
+		"size": "Small",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Shorkie",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "Low",
+		"size": "Medium",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Siberian Husky",
+		"temperament": "Responsive Dog",
+		"intelligence": "Medium",
+		"size": "Small",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Silken Windhound",
+		"temperament": "Active",
+		"intelligence": "Low",
+		"size": "Medium",
+		"lifespan": "15-16"
+	},
+	{
+		"breed": "Silky Terrier",
+		"temperament": "Timid/Shy",
+		"intelligence": "High",
+		"size": "Large",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Skye Terrier",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "Medium",
+		"size": "Small",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Sloughi",
+		"temperament": "Responsive Dog",
+		"intelligence": "Low",
+		"size": "Medium",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Small Munsterlander Pointer",
+		"temperament": "Active",
+		"intelligence": "Medium",
+		"size": "Large",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Soft Coated Wheaten Terrier",
+		"temperament": "Independent",
+		"intelligence": "Low",
+		"size": "X-Large",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Stabyhoun",
+		"temperament": "Timid/Shy",
+		"intelligence": "Medium",
+		"size": "Giant",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Staffordshire Bull Terrier",
+		"temperament": "Active",
+		"intelligence": "Low",
+		"size": "Giant",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Standard Schnauzer",
+		"temperament": "Independent",
+		"intelligence": "Low",
+		"size": "Mini",
+		"lifespan": "15-16"
+	},
+	{
+		"breed": "Sussex Spaniel",
+		"temperament": "Timid/Shy",
+		"intelligence": "Medium",
+		"size": "Small",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Swedish Vallhund",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "Low",
+		"size": "Medium",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Tibetan Mastiff",
+		"temperament": "Active",
+		"intelligence": "High",
+		"size": "Large",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Tibetan Spaniel",
+		"temperament": "Independent",
+		"intelligence": "High",
+		"size": "Giant",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Tibetan Terrier",
+		"temperament": "Timid/Shy",
+		"intelligence": "High",
+		"size": "Mini",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Toy Fox Terrier",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "Medium",
+		"size": "Small",
+		"lifespan": "15-16"
+	},
+	{
+		"breed": "Treeing Tennessee Brindle",
+		"temperament": "Responsive Dog",
+		"intelligence": "Low",
+		"size": "Medium",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Treeing Walker Coonhound",
+		"temperament": "Active",
+		"intelligence": "Medium",
+		"size": "Small",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Valley Bulldog",
+		"temperament": "Independent",
+		"intelligence": "Low",
+		"size": "Medium",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Vizsla",
+		"temperament": "Timid/Shy",
+		"intelligence": "High",
+		"size": "Medium",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Weimaraner",
+		"temperament": "Active",
+		"intelligence": "Medium",
+		"size": "Large",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Welsh Springer Spaniel",
+		"temperament": "Independent",
+		"intelligence": "Low",
+		"size": "X-Large",
+		"lifespan": "15-16"
+	},
+	{
+		"breed": "Welsh Terrier",
+		"temperament": "Timid/Shy",
+		"intelligence": "Medium",
+		"size": "Giant",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "West Highland White Terrier",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "Low",
+		"size": "Giant",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Westiepoo",
+		"temperament": "Responsive Dog",
+		"intelligence": "Medium",
+		"size": "Mini",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Whippet",
+		"temperament": "Active",
+		"intelligence": "Low",
+		"size": "Small",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Whoodle",
+		"temperament": "Timid/Shy",
+		"intelligence": "Low",
+		"size": "Medium",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Wirehaired Pointing Griffon",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "Medium",
+		"size": "Large",
+		"lifespan": "15-16"
+	},
+	{
+		"breed": "Xoloitzcuintli",
+		"temperament": "Responsive Dog",
+		"intelligence": "Low",
+		"size": "Giant",
+		"lifespan": "7-8"
+	},
+	{
+		"breed": "Yorkipoo",
+		"temperament": "Active",
+		"intelligence": "High",
+		"size": "Giant",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Yorkshire Terrier",
+		"temperament": "Non-Responsive or Relaxed",
+		"intelligence": "High",
+		"size": "Mini",
+		"lifespan": "10-13"
+	},
+	{
+		"breed": "Yorkshire Terrier",
+		"temperament": "Responsive Dog",
+		"intelligence": "Medium",
+		"size": "Small",
+		"lifespan": "10-13"
+	}
+]

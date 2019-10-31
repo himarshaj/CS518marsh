@@ -7,13 +7,14 @@
 	<?php include "myprofile.php"; ?>
    
 <style>    
- .main {
+ .main 
+ {
   margin-left: 160px; /* Same as the width of the sidenav */
   font-size: 28px; /* Increased text to enable scrolling */
   padding: 0px 10px;
-}
+ }
 </style>
-   </head>
+</head>
 
 <body>
 <div class="main">

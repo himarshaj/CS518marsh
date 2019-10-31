@@ -1,7 +1,5 @@
 <html>
 <body>
-
-
 <?php
 include 'master.php';
 $email=$_POST['email'];

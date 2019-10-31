@@ -1,0 +1,16 @@
+[
+  {
+    "breed": 1,
+    "temperament": "confident",
+    "intelligence": "low",
+    "popularity": "high",
+    "size": "XS"
+  },
+  {
+    "breed": 2,
+    "temperament": "confident",
+    "intelligence": "high",
+    "popularity": "low",
+    "size": "S"
+  }
+]
