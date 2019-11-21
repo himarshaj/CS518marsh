@@ -2,7 +2,8 @@
 <head>
   <title>Poodle</title>
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<?php include "master.php"; ?>
+	<?php include "master.php"; ?>	
+	<script src='https://www.google.com/recaptcha/api.js' async defer></script>
    </head>
 
 <body>
@@ -30,6 +31,7 @@ echo "<p id='error'>".$_GET['error']."</p>";
 		<tr><td>Re-Type Password:</td><td><input name="repassword" type="password" size="45" /><span id="error">*</span></td></tr> 
 		<tr><td></td><td><input name="reg" type="submit" value="Sign up" />  <input type="reset" value="Start again"/></td></tr>
 		<tr><td></td><td>Already a member ?<a href="login.php"> Sign in here </a> </tr>
+		<tr><td></td><td><div class="g-recaptcha" data-sitekey="6LeNucEUAAAAAD-AUGZdmaEpdCDdOUuMnCDWNrww"></div></td></tr>
 	</form>
 	</table>
 	

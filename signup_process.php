@@ -20,7 +20,8 @@ session_start();
 // initializing variables
 
 $name=$mail=$mobile=$uId=$pwd="";
-
+		
+		
 //Validations
 if($_SERVER["REQUEST_METHOD"]=="POST")
 { 
@@ -101,7 +102,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
             header('Location:./signup.php?error=password not match');
             exit();        
 	}
-
+}
 //PHP mailer
 
 
@@ -110,6 +111,8 @@ $servername="localhost";
 $username="admin";
 $pass="monarchs";
 $db="userlog";
+$captcha;
+$secretKey = "6LeNucEUAAAAAHUiE8ChOsEMDBJ7A96uspDHj5Jt";
 
 // connect to the database
 $conn=mysqli_connect($servername,$username,$pass,$db);
@@ -117,6 +120,24 @@ $conn=mysqli_connect($servername,$username,$pass,$db);
 if($conn->connect_error){
 	die("Connection failed:".$conn->connect_error);
   }
+  
+else echo"Successfully connected to the database!<br>";  
+		
+if(isset($_POST['g-recaptcha-response'])){
+$captcha=$_POST['g-recaptcha-response'];}
+
+if(!$captcha){
+    header('Location:./login.php?error=Captcha Not Verified, Please Check');
+    exit();
+        }
+$secretKey = "6LeNucEUAAAAAHUiE8ChOsEMDBJ7A96uspDHj5Jt";
+        $ip = $_SERVER['REMOTE_ADDR'];
+        // post request to server
+        $url = 'https://www.google.com/recaptcha/api/siteverify?secret=' . urlencode($secretKey) .  '&response=' . urlencode($captcha);
+        $response = file_get_contents($url);
+        $responseKeys = json_decode($response,true);
+        // should return JSON with success as true
+        if($responseKeys["success"]) {	
 
 $query = "SELECT * FROM users WHERE email='$mail'";
 $result = $conn->query($query);
@@ -140,7 +161,8 @@ if ($result->num_rows>0) {
             //Username is taken
          header('Location:./signup.php?error=Username is already in use. Please try again using a different username!');
          exit();
-        }
+}
+		
   
  
  
@@ -204,10 +226,15 @@ send_mail($mail, "Confirmation Email", $message);
 	 //echo'Now to complete the process,<a href="login.php">click here</a> to login';
  }
  else echo"Error:".$sql."<br>".$conn->error;
+
+
+		}
+		else {
+                echo '<h2>You are robot !</h2>';
+        }
  
 $conn->close();
 
-}
 
 ?>
 

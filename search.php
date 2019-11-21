@@ -3,16 +3,32 @@
 
 <head>
   <title>Poodle</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/mark.js/8.6.0/jquery.mark.min.js"></script>
+   <script src = "https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+   <script>
+    $(document).ready(function(){
+    $(function() {
+    var mark = function() 
+	{
+      var keyword = $("input[name='keyword']").val();
+      $(".snippet").unmark({
+        done: function() {
+          $(".snippet").mark(keyword);
+        }
+      });
+    };	
+	$("input[name='keyword']").on("blur", mark);
+    });
+    });
+   </script>
    <table align="right"><br>
    <tr><td align="right"><form action="search.php" method="get" >
-	<input type="text" size="40" name="keyword" ><input type="submit" value="Explore" />
+	<input type="text" size="40" name="keyword" ><input type="submit" name="sub" value="Explore" />
 	</form>
-   </td></tr></table>
-   
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-   
-	<?php include "master.php"; ?>
+   </td></tr></table>   
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+   <?php include "master.php"; ?>
    </head>
 <body>
 
@@ -49,27 +65,28 @@ if (empty($searchterm)){
 }
 	#print "<span>Please enter a keyword to search </span>";
 
-    
+   
 else{
 	$params = [
-    'index' => 'bank',
-    'size'   => 1000,    
+    'index' => 'finaldata',
+    'size'   => 1000,
+    'from' => 0,    
       'body' => [
          'query' => [
             'bool' => [
                'should' => [
                   
-                  ['match' => ['firstname' => "{$searchterm}"]],
-                  ['match' => ['lastname' => "{$searchterm}"]],
-                  ['match' => ['gender' => "{$searchterm}"]],
-                  ['match' => ['address' => "{$searchterm}"]],
-                  ['match' => ['employer' => "{$searchterm}"]],
-                  ['match' => ['email' => "{$searchterm}"]],
-                  ['match' => ['city' => "{$searchterm}"]],
-                  ['match' => ['state' => "{$searchterm}"]]
+                  ['match' => ['BreedName' => "{$searchterm}"]],
+                  ['match' => ['Group' => "{$searchterm}"]],
+                  ['match' => ['Intelligence' => "{$searchterm}"]],
+                  ['match' => ['Popularity' => "{$searchterm}"]],
+                  ['match' => ['Temperment' => "{$searchterm}"]],
+                  ['match' => ['Group1' => "{$searchterm}"]],
+                  ['match' => ['Weight' => "{$searchterm}"]],
+                  ['match' => ['Price' => "{$searchterm}"]]
                ]
             ]
-         ],  
+         ]	 
       ]
   ];
   
@@ -84,30 +101,104 @@ if($output_n==0)
 $time = ((int)($response['took'])/1000);
 $output = ($response['hits']['hits']);
 
+echo "You are looking for: ";
+print_r($searchterm);
+echo "<br>";
 print_r($time);
 echo " seconds to display ";
 print_r($output_n);
 echo " matches";
 
-echo "<div class = 'snippet' style = 'margin-bottom: 10%;' >";
- for ($i=0; $i<$output_n; $i++)
+if(isset($_SESSION['uId']))
+{ 
+
+echo '<div id="listId" class = "snippet" style = "margin-bottom: 10%;">
+     <ul class="list">';
+
+	 
+  
+for ($i=0; $i<$output_n; $i++)
+	{
+		#echo "$output[$i]['_id']" ;
+		echo '<form action="savfav.php" method="get" ><br><a href = "savfav.php?id1='.$output[$i]['_id'].'&id2='.$output[$i]['_source']['BreedName'].'">Save Record<div id="'.$output[$i]['_id'].'" class="p" >
+		<a>Name: </a><a>'.$output[$i]['_source']['BreedName'].'</a> 
+		<br>
+		<a>Group: </a><a>'.$output[$i]['_source']['Group'].'</a>
+		<br>
+		<a>Temperament: </a><a>'.$output[$i]['_source']['Temperment'].'</a>
+		<br>
+		<a>Popularity: </a><a>'.$output[$i]['_source']['Popularity'].'</a>
+		<a>, Intelligence: </a><a>'.$output[$i]['_source']['Intelligence'].' </a>
+		<br>
+		<a>Can be also grouped as: </a><a>'.$output[$i]['_source']['Group1'].' </a>
+		<a>, With an average pup weight of: </a><a>'.$output[$i]['_source']['Weight'].' </a>
+		<a>and a price level: </a><a>'.$output[$i]['_source']['Price'].' </a>		
+		<br><br><a href="'.$output[$i]['_source']['url'].'" >View more info </a>
+		</div></form>' ; 
+	} 
+
+echo '</ul><div class = "page_list" >
+  <ul class="pagination"></ul></div>
+</div>' ;
+
+}
+
+else 
+{ 
+
+echo "<br><br><a href=login.php >Log in</a><a> to your account to save search results to your profile! </a>";
+echo "<a> Don't have an account yet? </a><a href=login.php >Sign up</a><a> here first..</a>";
+echo '<div id="listId" class = "snippet" style = "margin-bottom: 10%;">
+     <ul class="list">';
+	 
+  
+for ($i=0; $i<$output_n; $i++)
 	{
 		echo '<br><div id="'.$output[$i]['_id'].'" class="p" >
-		<a>Name: </a><a>'.$output[$i]['_source']['firstname'].' '.$output[$i]['_source']['lastname'].' </a>
+		<a>Name: </a><a>'.$output[$i]['_source']['BreedName'].'</a> 
 		<br>
-		<a>Gender: </a><a>'.$output[$i]['_source']['gender'].'</a>
+		<a>Group: </a><a>'.$output[$i]['_source']['Group'].'</a>
 		<br>
-		<a>Address: </a><a>'.$output[$i]['_source']['address'].'</a>
-		<a>, City: </a><a>'.$output[$i]['_source']['city'].' </a>
-		<a>, State: </a><a>'.$output[$i]['_source']['state'].' </a>
+		<a>Temperament: </a><a>'.$output[$i]['_source']['Temperment'].'</a>
+		<br>
+		<a>Popularity: </a><a>'.$output[$i]['_source']['Popularity'].'</a>
+		<a>, Intelligence: </a><a>'.$output[$i]['_source']['Intelligence'].' </a>
+		<br>
+		<a>Can be also grouped as: </a><a>'.$output[$i]['_source']['Group1'].' </a>
+		<a>, With an average pup weight of: </a><a>'.$output[$i]['_source']['Weight'].' </a>
+		<a>and a price level: </a><a>'.$output[$i]['_source']['Price'].' </a>
+		<br><br><a href="'.$output[$i]['_source']['url'].'" >View more info</a>
 		</div>';
 	} 
-echo "</div>";	 
+
+echo '</ul><div class = "page_list" >
+  <ul class="pagination"></ul></div>
+</div>' ;
+
+}
 }	
 
 #print_r($response);
 
 ?>
+
+
+
+<script>
+  var options = {
+    valueNames: [ 'name', 'category' ],
+    page: 10,
+    pagination: true,
+	innerWindow: 10, // How many pages should be visible on each side of the current page. innerWindow: 2 ,  … 3 4 5 6 7
+	outerWindow: 10 // How many pages should be visible on from the beginning and from the end of the pagination. outerWindow: 2,  1 2 … 4 5 6 7 8 … 11 12
+  };
+
+  var listObj = new List('listId', options);
+</script>
+
+
 </body>
+
 </html>
+
 

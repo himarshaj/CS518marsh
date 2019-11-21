@@ -41,11 +41,10 @@ body {
 
 <div class="sidenav">
  
- <a href='collections.php'>My Collections</a><br>  
+ <a href='collections.php'>My Collection</a><br>  
  <a href='unamechange.php'>Change My Username</a><br>
  <a href='pwdchange.php'>Change My Password </a><br> 
  <a href='mobilechange.php'>Update My Mobile Number</a><br>
-	
 </div>
 
 

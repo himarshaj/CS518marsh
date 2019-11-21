@@ -13,6 +13,39 @@ display: block;
   color: black;
 }
 
+<style>
+/* Style The Dropdown Button */
+.dropbtn {
+  background-color: #3299a8;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3299a8;
+}
+</style>
+
 </style>
 
 <div class="container" align= "center">
@@ -23,35 +56,52 @@ display: block;
 		
 		<table><br><br>
 			<tr>
-			<td><div>
-				<select name="gender">
-					<option value="">Select Gender</option>
-					<option value="M">Male</option>
-					<option value="F">Female</option>
+			<td><div class="dropdown" >
+				<select name="Group">
+					<option value="" class="dropbtn" >Select Group</option>
+					<option value="Working" class="dropdown-content">Working</option>
+					<option value="Sporting" class="dropdown-content">Sporting</option>
+					<option value="Herding" class="dropdown-content">Herding</option>					
+					<option value="Terrier" class="dropdown-content">Terrier</option>
+					<option value="Hound" class="dropdown-content">Hound</option>
 				</select>
 			</td></div>
 			</tr>
 			<tr>
-			<tr><td><div>
-				<select name="city" >
-					<option value="">Select City</option>
-					<option value="belvoir">Belvoir</option>
-					<option value="cliffside">Cliffside</option>
-					<option value="bartonsville">Bartonsville</option>
-					<option value="riviera">Riviera</option>
-					<option value="harborton">Harborton</option>
+			<tr><td><div class="dropdown">
+				<select name="Temperment" >
+					<option value="" class="dropbtn">Select Temperament</option>
+					<option value="Affectionate" class="dropdown-content">Affectionate</option>
+					<option value="Alert" class="dropdown-content">Alert</option>
+					<option value="Active" class="dropdown-content">Active</option>
+					<option value="Friendly" class="dropdown-content">Friendly</option>
+					<option value="Adaptable" class="dropdown-content">Adaptable</option>
 				</select>
 			</td></div></tr><tr>
-			<td><div>
-				<select name="state" >
-					<option value="">Select State</option>
-					<option value="IL">IL</option>
-					<option value="TN">TN</option>
-					<option value="pa">PA</option>
-					<option value="id">ID</option>
-					<option value="ms">MS</option>
-					<option value="ny">NY</option>
-					<option value="wv">WV</option>
+			<td><div class="dropdown">
+				<select name="Intelligence">
+					<option value="" class="dropbtn">Select Intelligence</option>
+					<option value="HighI" class="dropdown-content">High</option>
+					<option value="MediumI" class="dropdown-content">Medium</option>
+					<option value="LowI" class="dropdown-content">Low</option>
+				</select>
+			</td></div></tr>
+			<tr>
+			<td><div class="dropdown">
+				<select name="Popularity">
+					<option value="" class="dropbtn">Select Popularity</option>
+					<option value="HighPo" class="dropdown-content">High</option>
+					<option value="MediumPo" class="dropdown-content">Medium</option>
+					<option value="LowPo" class="dropdown-content">Low</option>
+				</select>
+			</td></div class="dropdown"></tr>
+			<tr>
+			<td><div class="dropdown">
+				<select name="Price" >
+					<option value="" class="dropbtn">Select Price</option>
+					<option value="HighPr" class="dropdown-content">High</option>
+					<option value="MediumPr" class="dropdown-content">Medium</option>
+					<option value="LowPr" class="dropdown-content">Low</option>
 				</select>
 			</td></div></tr>
 			<input size="60" class="form-control" type="text" placeholder="Search" name="keyword1" /><button type="submit" >Explore</button>
@@ -75,6 +125,8 @@ $client = ClientBuilder::create()->setHosts($hosts)->build();
 $selected1 = "";
 $selected2 = "";
 $selected3 = "";
+$selected4 = "";
+$selected5 = "";
 $searchterm1 ="" ;
 
 
@@ -84,39 +136,46 @@ if(isset($_POST["keyword1"]))
 	#sanitize searchterm
     $searchterm1 = strip_tags($searchterm1);
 
-if(isset($_POST['gender']))
-    $selected1 = trim($_POST['gender']); 
+if(isset($_POST['Group']))
+    $selected1 = trim($_POST['Group']); 
     $selected1 = strip_tags($selected1);
 	
-if(isset($_POST['city']))
-    $selected2 = trim($_POST['city']); 
+if(isset($_POST['Temperment']))
+    $selected2 = trim($_POST['Temperment']); 
     $selected2 = strip_tags($selected2);
 
-if(isset($_POST['state'])){
-    $selected3 = trim($_POST['state']); 
+if(isset($_POST['Intelligence'])){
+    $selected3 = trim($_POST['Intelligence']); 
     $selected3 = strip_tags($selected3);}
 
-$match_string = ("$searchterm1 $selected1 $selected2 $selected3");
+if(isset($_POST['Popularity'])){
+    $selected4 = trim($_POST['Popularity']); 
+    $selected4 = strip_tags($selected4);}
+	
+if(isset($_POST['Price'])){
+    $selected5 = trim($_POST['Price']); 
+    $selected5 = strip_tags($selected4);}	
+
+$match_string = ("$searchterm1 $selected1 $selected2 $selected3 $selected4 $selected5");
 
 #print_r($match_string);
 
 $params = [
-    'index' => 'bank',
+    'index' => 'finaldata',
     'size'   => 1000,    
       'body' => [
          'query' => [
             'bool' => [
                'should' => [
                   
-                  ['match' => ['firstname' => "{$match_string}"]],
-                  ['match' => ['lastname' => "{$match_string}"]],
-                  ['match' => ['gender' => "{$match_string}"]],
-                  ['match' => ['address' => "{$match_string}"]],
-                  ['match' => ['employer' => "{$match_string}"]],
-                  ['match' => ['email' => "{$match_string}"]],
-                  ['match' => ['city' => "{$match_string}"]],
-                  ['match' => ['state' => "{$match_string}"]]
-				  
+                  ['match' => ['BreedName' => "{$match_string}"]],
+                  ['match' => ['Group' => "{$match_string}"]],
+                  ['match' => ['Intelligence' => "{$match_string}"]],
+                  ['match' => ['Popularity' => "{$match_string}"]],
+                  ['match' => ['Temperment' => "{$match_string}"]],
+                  ['match' => ['Group1' => "{$match_string}"]],
+                  ['match' => ['Weight' => "{$match_string}"]],
+                  ['match' => ['Price' => "{$match_string}"]]
                ]
             ]
          ],  
@@ -127,10 +186,6 @@ $response = $client->search($params);
 
 
 #print_r($response);
-#print_r($response1);
-#print_r($response2);
-#print_r($response3);
-#print_r($gendermatch);
 
 $output_n = sizeof($response['hits']['hits'],0);
 
@@ -146,20 +201,25 @@ print_r($time);
 echo " seconds to display ";
 print_r($output_n);
 echo " matches";
+echo "<br>";
+print_r($searchterm1);
 
 echo "<div class = 'snippet' style = 'margin-bottom: 10%;' >";
  for ($i=0; $i<$output_n; $i++)
 	{
 		echo '<br><div id="'.$output[$i]['_id'].'" class="p" >
-		<a>'.$output[$i]['_source']['firstname'].' '.$output[$i]['_source']['lastname'].' </a>
+		<a>Name: </a><a>'.$output[$i]['_source']['BreedName'].'</a> 
 		<br>
-		<a>'.$output[$i]['_source']['address'].' </a>
+		<a>Group: </a><a>'.$output[$i]['_source']['Group'].'</a>
 		<br>
-		<a>'.$output[$i]['_source']['gender'].' </a>
+		<a>Temperament: </a><a>'.$output[$i]['_source']['Temperment'].'</a>
 		<br>
-		<a>'.$output[$i]['_source']['city'].' </a>
+		<a>Popularity: </a><a>'.$output[$i]['_source']['Popularity'].'</a>
+		<a>, Intelligence: </a><a>'.$output[$i]['_source']['Intelligence'].' </a>
 		<br>
-		<a>'.$output[$i]['_source']['state'].' </a>
+		<a>Additional: can be also grouped as a </a><a> '.$output[$i]['_source']['Group1'].' dog</a>
+		<a>, With an average pup weight of: </a><a>'.$output[$i]['_source']['Weight'].' </a>
+		<a>and a price level: </a><a>'.$output[$i]['_source']['Price'].' </a>
 		</div>';
 	} 
 echo "</div>";	 

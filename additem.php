@@ -24,60 +24,60 @@ $client = ClientBuilder::create()->setHosts($hosts)->build();
 $id = substr($firstname,0,1). rand(1001,5000);
 
 
-$firstname ="" ;
-$lastname ="" ;
-$gender ="" ;
-$address ="" ;
-$employer ="" ;
-$email ="" ;
-$city ="" ;
-$state ="" ;
+$BreedName ="" ;
+$Group ="" ;
+$Group1 ="" ;
+$Temperment ="" ;
+$Intelligence ="" ;
+$Popularity ="" ;
+$Weight ="" ;
+$Price ="" ;
 
 
-if(isset($_POST["firstname"]))
-	$firstname = trim($_POST['firstname']); 
-	$firstname = strip_tags($firstname);
-if(isset($_POST["lastname"]))
-	$lastname = trim($_POST['lastname']); 
-	$lastname = strip_tags($lastname);
-if(isset($_POST["gender"]))
-	$gender = trim($_POST['gender']); 
-	$gender = strip_tags($gender);
-if(isset($_POST["address"]))
-	$address = trim($_POST['address']); 
-	$address = strip_tags($address);
-if(isset($_POST["employer"]))
-	$employer = trim($_POST['employer']); 
-	$employer = strip_tags($employer);
-if(isset($_POST["email"]))
-	$email = trim($_POST['email']); 
-	$email = strip_tags($email);
-if(isset($_POST["city"]))
-	$city = trim($_POST['city']); 
-	$city = strip_tags($city);
-if(isset($_POST["email"]))
-	$state = trim($_POST['state']); 
-	$state = strip_tags($state);	
+if(isset($_POST["BreedName"]))
+	$BreedName = trim($_POST['BreedName']); 
+	$BreedName = strip_tags($BreedName);
+if(isset($_POST["Group"]))
+	$Group = trim($_POST['Group']); 
+	$Group = strip_tags($Group);
+if(isset($_POST["Group1"]))
+	$Group1 = trim($_POST['Group1']); 
+	$Group1 = strip_tags($Group1);
+if(isset($_POST["Temperment"]))
+	$Temperment = trim($_POST['Temperment']); 
+	$Temperment = strip_tags($Temperment);
+if(isset($_POST["Intelligence"]))
+	$Intelligence = trim($_POST['Intelligence']); 
+	$Intelligence = strip_tags($Intelligence);
+if(isset($_POST["Popularity"]))
+	$Popularity = trim($_POST['Popularity']); 
+	$Popularity = strip_tags($Popularity);
+if(isset($_POST["Weight"]))
+	$Weight = trim($_POST['Weight']); 
+	$Weight = strip_tags($Weight);
+if(isset($_POST["Price"]))
+	$Price = trim($_POST['Price']); 
+	$Price = strip_tags($Price);	
 	
 	
-if (empty($firstname)){
+if (empty($BreedName)){
 	header("Location:./newitem.php?error=First name can't be empty");
 	exit();
 	}
 
     
 else{
-	$params = [	'index' => 'bank',
+	$params = [	'index' => 'dogs',
 				'id' => $id,
 				'body' => [
-				'firstname' => $firstname,
-				'lastname' => $lastname,
-				'gender' => $gender,
-				'address' => $address,
-				'employer' => $employer,
-				'email' => $email, 
-				'city' => $city,
-				'state' => $state ]
+				'BreedName' => $BreedName,
+				'Group' => $Group,
+				'Group1' => $Group1,
+				'Temperment' => $Temperment,
+				'Intelligence' => $Intelligence,
+				'Popularity' => $Popularity, 
+				'Weight' => $Weight,
+				'Price' => $Price ]
 			];	
 
 $response = $client->index($params);
