@@ -64,7 +64,6 @@ if (empty($BreedName)){
 	header("Location:./newitem.php?error=First name can't be empty");
 	exit();
 	}
-
     
 else{
 	$params = [	'index' => 'dogs',

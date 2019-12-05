@@ -2,10 +2,30 @@
 <head>
   <title>Poodle</title>
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src = "https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
 	<?php include "master.php"; ?>
    </head>
 <body>
-
+<script>
+  function startDictation() {
+    if (window.hasOwnProperty('webkitSpeechRecognition')) {
+      var recognition = new webkitSpeechRecognition();
+      recognition.continuous = false;
+      recognition.interimResults = false;
+      recognition.lang = "en-US";
+      recognition.start();
+      recognition.onresult = function(e) {
+        document.getElementById('transcript').value
+                                 = e.results[0][0].transcript;
+        recognition.stop();
+        document.getElementById('labnol').submit();
+      };
+      recognition.onerror = function(e) {
+        recognition.stop();
+      }
+    }
+  }
+</script>
 <style>
 .snippet .p {
 display: block;
@@ -52,7 +72,7 @@ display: block;
 
 
 <div class="row" id="filter" align="left">
-		<form action="advanced_search.php" method= "post">
+		<form id="labnol" action="advanced_search.php" method= "post">
 		
 		<table><br><br>
 			<tr>
@@ -104,7 +124,9 @@ display: block;
 					<option value="LowPr" class="dropdown-content">Low</option>
 				</select>
 			</td></div></tr>
-			<input size="60" class="form-control" type="text" placeholder="Search" name="keyword1" /><button type="submit" >Explore</button>
+			<input id= "transcript" size="60" class="form-control" type="text" placeholder="Search" name="keyword1" />
+			<img onclick="startDictation()" src="speaker.png" style="width:20px;height:20px;"/>
+			<button type="submit" >Explore</button>
 		</table>	
 		</form>
 	</div>
@@ -158,8 +180,6 @@ if(isset($_POST['Price'])){
 
 $match_string = ("$searchterm1 $selected1 $selected2 $selected3 $selected4 $selected5");
 
-#print_r($match_string);
-
 $params = [
     'index' => 'finaldata',
     'size'   => 1000,    
@@ -197,15 +217,59 @@ if($output_n==0)
 $time = ((int)($response['took'])/1000);
 $output = ($response['hits']['hits']);
 
+
+echo "You are looking for: ";
+print_r($searchterm);
+echo "<br>";
 print_r($time);
 echo " seconds to display ";
 print_r($output_n);
 echo " matches";
-echo "<br>";
-print_r($searchterm1);
 
-echo "<div class = 'snippet' style = 'margin-bottom: 10%;' >";
- for ($i=0; $i<$output_n; $i++)
+if(isset($_SESSION['uId']))
+{ 
+
+echo '<div id="listId" class = "snippet" style = "margin-bottom: 10%;">
+     <ul class="list">';
+
+	 
+  
+for ($i=0; $i<$output_n; $i++)
+	{
+		#echo "$output[$i]['_id']" ;
+		echo '<form action="savfav.php" method="get" ><br><a href = "savfav.php?id1='.$output[$i]['_id'].'&id2='.$output[$i]['_source']['BreedName'].'">Save Record<div id="'.$output[$i]['_id'].'" class="p" >
+		<a>Name: </a><a>'.$output[$i]['_source']['BreedName'].'</a> 
+		<br>
+		<a>Group: </a><a>'.$output[$i]['_source']['Group'].'</a>
+		<br>
+		<a>Temperament: </a><a>'.$output[$i]['_source']['Temperment'].'</a>
+		<br>
+		<a>Popularity: </a><a>'.$output[$i]['_source']['Popularity'].'</a>
+		<a>, Intelligence: </a><a>'.$output[$i]['_source']['Intelligence'].' </a>
+		<br>
+		<a>Can be also grouped as: </a><a>'.$output[$i]['_source']['Group1'].' </a>
+		<a>, With an average pup weight of: </a><a>'.$output[$i]['_source']['Weight'].' </a>
+		<a>and a price level: </a><a>'.$output[$i]['_source']['Price'].' </a>		
+		<br><br><a href="'.$output[$i]['_source']['url'].'" >View more info </a>
+		</div></form>' ; 
+	} 
+
+echo '</ul><div class = "page_list" >
+  <ul class="pagination"></ul></div>
+</div>' ;
+
+}
+
+else 
+{ 
+
+echo "<br><br><a href=login.php >Log in</a><a> to your account to save search results to your profile! </a>";
+echo "<a> Don't have an account yet? </a><a href=login.php >Sign up</a><a> here first..</a>";
+echo '<div id="listId" class = "snippet" style = "margin-bottom: 10%;">
+     <ul class="list">';
+	 
+  
+for ($i=0; $i<$output_n; $i++)
 	{
 		echo '<br><div id="'.$output[$i]['_id'].'" class="p" >
 		<a>Name: </a><a>'.$output[$i]['_source']['BreedName'].'</a> 
@@ -217,16 +281,35 @@ echo "<div class = 'snippet' style = 'margin-bottom: 10%;' >";
 		<a>Popularity: </a><a>'.$output[$i]['_source']['Popularity'].'</a>
 		<a>, Intelligence: </a><a>'.$output[$i]['_source']['Intelligence'].' </a>
 		<br>
-		<a>Additional: can be also grouped as a </a><a> '.$output[$i]['_source']['Group1'].' dog</a>
+		<a>Can be also grouped as: </a><a>'.$output[$i]['_source']['Group1'].' </a>
 		<a>, With an average pup weight of: </a><a>'.$output[$i]['_source']['Weight'].' </a>
 		<a>and a price level: </a><a>'.$output[$i]['_source']['Price'].' </a>
+		<br><br><a href="'.$output[$i]['_source']['url'].'" >View more info</a>
 		</div>';
 	} 
-echo "</div>";	 
+
+echo '</ul><div class = "page_list" >
+  <ul class="pagination"></ul></div>
+</div>' ;
+
+}
 
 
 ?>
 
+<script>
+  var options = {
+    valueNames: [ 'name', 'category' ],
+    page: 10,
+	innerWindow: 2, // How many pages should be visible on each side of the current page. innerWindow: 2 ,  … 3 4 5 6 7
+	outerWindow: 2, // How many pages should be visible on from the beginning and from the end of the pagination. outerWindow: 2,  1 2 … 4 5 6 7 8 … 11 12
+    pagination: true
+	
+  };
+
+  var listObj = new List('listId', options);
+  
+</script>
 
 
 <footer id="foot01"></footer>

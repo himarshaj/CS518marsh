@@ -22,11 +22,27 @@
     });
     });
    </script>
-   <table align="right"><br>
-   <tr><td align="right"><form action="search.php" method="get" >
-	<input type="text" size="40" name="keyword" ><input type="submit" name="sub" value="Explore" />
-	</form>
-   </td></tr></table>   
+   <script>
+  function startDictation() {
+    if (window.hasOwnProperty('webkitSpeechRecognition')) {
+      var recognition = new webkitSpeechRecognition();
+      recognition.continuous = false;
+      recognition.interimResults = false;
+      recognition.lang = "en-US";
+      recognition.start();
+      recognition.onresult = function(e) {
+        document.getElementById('transcript').value
+                                 = e.results[0][0].transcript;
+        recognition.stop();
+        document.getElementById('labnol').submit();
+      };
+      recognition.onerror = function(e) {
+        recognition.stop();
+      }
+    }
+  }
+</script>
+
    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
    <?php include "master.php"; ?>
    </head>
@@ -59,6 +75,15 @@ if(isset($_GET["keyword"]))
 	#sanitize searchterm
     $searchterm = strip_tags($searchterm);
 	
+echo '<table align="right"><br>
+   <tr><td align="right"><form id="labnol" action="search.php" method="get" >
+	<input  id= "transcript" type="text" value="'.$searchterm.'"  size="40" name="keyword" >
+	<img onclick="startDictation()" src="speaker.png" style="width:20px;height:20px;"/>
+	<input type="submit" name="sub" value="Explore" />
+	</form>
+   </td></tr></table>   
+   ';
+   
 if (empty($searchterm)){
 	header('Location:./index.php?error=Please enter a keyword to search');
 	exit();
@@ -188,12 +213,14 @@ echo '</ul><div class = "page_list" >
   var options = {
     valueNames: [ 'name', 'category' ],
     page: 10,
-    pagination: true,
-	innerWindow: 10, // How many pages should be visible on each side of the current page. innerWindow: 2 ,  … 3 4 5 6 7
-	outerWindow: 10 // How many pages should be visible on from the beginning and from the end of the pagination. outerWindow: 2,  1 2 … 4 5 6 7 8 … 11 12
+	innerWindow: 2, // How many pages should be visible on each side of the current page. innerWindow: 2 ,  … 3 4 5 6 7
+	outerWindow: 2, // How many pages should be visible on from the beginning and from the end of the pagination. outerWindow: 2,  1 2 … 4 5 6 7 8 … 11 12
+    pagination: true
+	
   };
 
   var listObj = new List('listId', options);
+  
 </script>
 
 
